@@ -6,10 +6,10 @@ import java.util.List;
 public class SortPersonsExample {
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
-        people.add(new Person("Hamid", "Jamila"));
-        people.add(new Person("Martin", "Bob"));
-        people.add(new Person("Hamid", "Charles"));
-        people.add(new Person("Bernard", "Jamila"));
+        people.add(new Person("Meryem", "Benchelh"));
+        people.add(new Person("Fati", "Brada"));
+        people.add(new Person("Meryem", "Charles"));
+        people.add(new Person("Rania", "Kssim"));
 
         // Tri de la liste de personnes
         Collections.sort(people);

@@ -1,34 +1,34 @@
 package com.meryem;
 
 public class Person implements Comparable<Person> {
-    private String lastName;
-    private String firstName;
+    private String nom;
+    private String prenom;
 
-    public Person(String lastName, String firstName) {
-        this.lastName = lastName;
-        this.firstName = firstName;
+    public Person(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getNom() {
+        return nom;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getPrenom() {
+        return prenom;
     }
 
     @Override
     public int compareTo(Person other) {
-        int lastNameComparison = this.lastName.compareTo(other.lastName);
-        if (lastNameComparison != 0) {
-            return lastNameComparison; // Tri par nom de famille
+        int nomComparison = this.nom.compareTo(other.nom);
+        if (nomComparison != 0) {
+            return nomComparison; // Tri par nom
         } else {
-            return this.firstName.compareTo(other.firstName); // Tri par prénom en cas de noms identiques
+            return this.prenom.compareTo(other.prenom); // Tri par prénom en cas de noms identiques
         }
     }
 
     @Override
     public String toString() {
-        return lastName + ", " + firstName;
+        return nom + ", " + prenom;
     }
 }
